@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/SignUp_styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/input.css" type="text/css" />
+    <link rel="stylesheet" href="../css/password_styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../css/consultant_styles.css"
+      type="text/css"
+    />
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- sign Up -->
+    <div class="sign_Up">
+      <div class="signUp0">
+        <div onclick="homePage()" class="logo">
+          <img src="/images/dpdOnline.png" alt="icon" />
+        </div>
+
+        <div class="signup_password">
+          <button class="btn3">
+            <a href="./signUp_Page3.html"
+              ><img src="/images/Vector.png " alt="icon" /> Back
+            </a>
+          </button>
+          <h3 class="sign_text">Create new Password</h3>
+
+          <div class="input_consult">
+            <label
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </label>
+            <div class="sign_consult3">
+              <div class="upper_div">
+                <div class="upper_textZ">Password</div>
+                <div
+                  id="textIcon"
+                  class="upper_textS"
+                  style="visibility: hidden"
+                ></div>
+              </div>
+
+              <div class="lock_consult">
+                <i class="icon_lock"></i>
+                <input
+                  class="input_styConsultA"
+                  type="password"
+                  id="passwordId"
+                  onkeyup="getVal(this)"
+                />
+                <div onclick="myFunction()" id="showP" class="show_text">
+                  show
+                </div>
+              </div>
+            </div>
+            <div class="upper_textA">
+              Minimum of 8 characters, with upper and lowercase, a number and
+              Special character.
+            </div>
+
+            <div class="sign_consult3">
+              <div class="upper_div">
+                <div class="upper_textD">Re-enter</div>
+                <div
+                  id="textCons"
+                  class="upper_textS"
+                  style="visibility: hidden"
+                ></div>
+              </div>
+
+              <div class="lock_consult">
+                <i class="icon_lock"></i>
+                <input
+                  class="input_styConsultA"
+                  type="password"
+                  id="matchPass"
+                  onkeyup="confirmPass(this)"
+                />
+                <div onclick="toogleshow()" id="showPass" class="show_text">
+                  show
+                </div>
+              </div>
+            </div>
+            <div class="upper_textA" id="matchPass">
+              Minimum of 8 characters, with upper and lowercase, a number and
+              Special character.
+            </div>
+          </div>
+          <div onclick="changePage()" id="someid" class="icons_consult">
+            <button class="btn4">Continue</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <img src="/images/affilate/framea1.png" alt="icon" />
+      </footer>
+    </div>
+  </body>
+  <script src="../../js/password.js"></script>
+  <script>
+    function changePage() {
+      window.location = "#";
+    }
+  </script>
+  <script src="/js/index.js"></script>
+</html>

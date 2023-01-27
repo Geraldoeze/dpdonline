@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/SignUp_styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/input.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/consultant_styles.css" type="text/css" />
+<link rel="stylesheet" href="../css/pages_styles.css" type="text/css"/>
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- sign Up -->
+    <div class="signUp">
+      <div class="signUp0">
+        <div onclick="homePage()" class="logo">
+          <img src="/images/dpdOnline.png" alt="icon" />
+        </div>
+
+        <div class="signup_content3">
+          <button class="btn3">
+            <a href="./signUp_Page2.html"
+              ><img src="/images/Vector.png " alt="icon" /> Back
+            </a>
+          </button>
+          <h3 class="sign_text">More Information</h3>
+ 
+          <div class="input_formPage3">
+            <label>Fill the form below with your bio data</label>
+            <div class="input_page3">
+              <div class="sign_content3">
+                <div class="upper_text">Country of origin</div>
+                <select class="input_styled3" name="origin">
+                  <option value="none" selected>Select Country</option>
+                  <option value="nig">Nigeria</option>
+                  <option value="gha">Ghana</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="chi">China</option>
+                  <option value="can">Canada</option>
+                </select>
+              </div>
+
+            <div class="sign_content3">
+              <div class="upper_text">Preferred DPD thematic area </div>
+              <select class="input_styled3" name="area">
+                <option value="none" selected> select thematic area</option>
+                <option value="begin">Beginner</option>
+                <option value="inter">Intermediate</option>
+                <option value="inter">Professional</option>
+              </select>
+            </div>
+            <div class="sign_content3">
+              <div class="upper_text">Country of residence</div>
+              <select class="input_styled3" name="residence">
+                <option value="none" selected>Select Country</option>
+                <option value="nig">Nigeria</option>
+                <option value="gha">Ghana</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="chi">China</option>
+                <option value="can">Canada</option>
+              </select>
+            </div>
+  
+            <!-- special case File input -->
+            <input
+                type="file"
+                id="firstimg"
+                onchange="getImage(this.value)"
+                style="display: none;"
+              />
+                <div style="cursor:unset;" class="sign_input3">
+                  <div id="output" class="div_input">Attach CV</div>
+                  <label style="width: 15%;"  for="firstimg">
+                    <span><i class="icon_sty icon_ln"></i></span>
+                  </label>
+                </div>
+      
+                
+
+            <div class="sign_content3">
+              <div class="upper_text">Highest level of education</div>
+              <select class="input_styled3" name="gender">
+                <option value="none" selected>select qualification</option>
+                <option value="u">Undergraduate</option>
+                <option value="d">Diploma</option>
+                <option value="b">Doctorate</option>
+              </select>
+            </div>
+            <div class="sign_input3">
+              <input
+                class="input_sty"
+                type="text"
+                id="experience"
+                placeholder="Years of experience"
+              />
+            </div>
+           
+            </div>
+            <div onclick="changePage()" id="someid" class="icons3">
+              <button class="btn4">
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <footer class="footer">
+        <img src="/images/Frame3.png" alt="icon" />
+      </footer>
+    </div>
+  </body>
+  <script>
+    function changePage () {
+    
+    window.location = "signUp_Page4.html";
+    }
+    function getImage (imgName) {
+      const newImage = imgName.replace(/^.*\\/, "")
+      const newIm = document.getElementById('output');
+      newIm.innerText = newImage
+    }
+  </script>
+  <script src="/js/index.js"></script>
+</html>

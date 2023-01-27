@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/SignUp_styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/input.css" type="text/css"/>
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- sign Up -->
+    <div class="signUp">
+      <div class="signUp0">
+        <div onclick="homePage()" class="logo">
+          <img src="/images/dpdOnline.png" alt="icon" />
+        </div>
+
+        <div class="signup_content">
+          <button class="btn3">
+            <a href="./signUp_Page3.html"
+              ><img src="/images/Vector.png " alt="icon" /> Back
+            </a>
+          </button>
+          <h3 class="sign_text">More Information</h3>
+          <div class="input_form">
+            <label
+              >Give two (2) professional references</label
+            >
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="Refname"
+                placeholder="Referee name"
+              />
+            </div>
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="name"
+                placeholder="Referee email"
+              />
+            </div>
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="name"
+                placeholder="Referee name"
+              />
+            </div>
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="name"
+                placeholder="Referee email"
+              />
+            </div>
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="name"
+                placeholder="Enter link to latest publication (optional)"
+              />
+            </div>
+            
+          <div onclick="changePage()" id="someid" class="icons">
+            <button class="btn4">
+              Continue
+            </button>
+          </div>
+        </div>
+       
+      </div>
+      <footer class="footer">
+        <img src="/images/Frame4.png" alt="icon" />
+      </footer>
+    </div>
+  </body>
+  <script>
+    function changePage () {
+    
+    window.location = "signUp_Page5.html";
+    }
+  </script>
+  <script src="/js/index.js"></script>
+</html>

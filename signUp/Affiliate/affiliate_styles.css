@@ -1,0 +1,43 @@
+.affiliate_inpu {
+    width: 100%;
+    
+}
+
+
+.affiliate_inputs {
+    width: 90%;
+    padding: 0.7rem;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    border: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+.affiliate_inputs::placeholder {
+    color: #343434;
+    opacity: 0.5;
+    font-size: 14.4265px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+/* .sign_input {
+    width: 90%;
+    padding: 0.7rem;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    border: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .sign_input::placeholder {
+    color: #343434;
+    opacity: 0.5;
+    font-size: 14.4265px;
+    font-weight: 500;
+    line-height: 18px;
+  } */

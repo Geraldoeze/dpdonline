@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/SignUp_styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/input.css" type="text/css"/>
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- sign Up -->
+    <div class="sign_Up">
+      <div class="signUp0">
+        <div onclick="homePage()" class="logo">
+          <img src="/images/dpdOnline.png" alt="icon" />
+        </div>
+
+        <div class="signup_content">
+          <button class="btn3">
+            <a href="./signUp_Page1.html"
+              ><img src="/images/Vector.png " alt="icon" /> Back
+            </a>
+          </button>
+          <h3 class="sign_text">Lets Us Know You</h3>
+          <div class="input_form">
+            <label>Fill the form below with your bio data</label>
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="name"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="sign_input">
+              <input
+                class="input_sty"
+                type="text"
+                id="name"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <div class="sign_content">
+              <div class="upper_text">Phone Number</div>
+              <div class="input__select">
+                <select class="unSelect" name="number">
+                <option value="none" selected>NIG +234</option>
+                <option value="uae">UAE +966</option>
+                <option value="gha">GHA +233</option>
+                <option value="usa">USA +1</option>
+                <option value="uk">UK +44</option>
+                <option value="chi">CHN +86</option>
+                <option value="can">CAN +1</option>
+              </select>
+                <input class="unInput" type="number" placeholder="Number" />
+              </div>
+              
+            </div>
+
+            <div class="sign_content">
+              <div class="upper_text">Sex</div>
+              <select class="input_styled" name="gender">
+                <option value="none" selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            
+            <div onclick="changePage()" id="someid" class="icons">
+              <button class="btn4">
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <img
+          src="/images/affilate/framea2.png"
+          alt="icon"
+          
+          
+        />
+      </footer>
+    </div>
+  </body>
+  <script>
+    function changePage () {
+    
+    window.location = "signUp_Page3.html";
+    }
+  </script>
+  <script src="/js/index.js"></script>
+</html>

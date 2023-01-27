@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/SignUp_styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/consultant_styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/pages_styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/password_styles.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../signUp/css/input.css" type="text/css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- login -->
+
+    <div class="sign_Up">
+      <div class="signUp0">
+        <div onclick="homePage()" class="logo">
+          <img src="/images/dpdOnline.png" alt="icon" />
+        </div>
+
+        <div class="signup_content">
+          <h3 class="sign_text">Welcome back 😊</h3>
+
+          <div class="input_form">
+            <label
+              >Hey, 👋🏼 Enter your details below to login to your account</label
+            >
+            <div class="sign_inputEmail">
+              <input class="input_sty" placeholder="Enter email" type="email" />
+            </div>
+
+            <div class="sign_consult3">
+              <div class="upper_div">
+                <div class="upper_textZ">Password</div>
+                <div
+                  id="textIcon"
+                  class="upper_textS"
+                  style="visibility: hidden"
+                >
+                
+              </div>
+              </div>
+
+              <div class="lock_consult">
+                <i class="icon_lock"></i>
+                <input
+                  class="input_styConsultA"
+                  type="password"
+                  id="passwordId"
+                  onkeyup="getVal(this)"
+                />
+                <div onclick="myFunction()" id="showP" class="show_text">
+                  show
+                </div>
+              </div>
+            </div>
+            <div class="wahalla">
+              <div class="checkbox"><img style="margin-right: 0.5rem;" src="/images/VectorPrime.png" alt="prime" /> keep me log in</div>
+              <div onclick="forgotPass()" class="forgot_P">Forgot Password</div>
+            </div>
+            <div class="icons">
+              <div class="sign_icon">
+                <img
+                  class=""
+                  src="/images/icons8-google-240.png"
+                  width="40px"
+                />
+              </div>
+              <div class="sign_icon">
+                <img
+                  style="padding: 5px"
+                  src="/images/Vectorblue.png"
+                  width="20px"
+                  height="30px"
+                />
+              </div>
+              <button onclick="changePage()" id="someid" class="btn1">
+                Continue
+              </button>
+            </div>
+          </div>
+          <div class="sign_typo1">
+            Don't have an account?
+            <div onclick="signUpHandler()" style="font-weight: bold">Signup now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function changePage() {
+      window.location = "#";
+    }
+    function signUpHandler () {
+      window.location = "/signUp/Organisation/signUp_Page0.html";
+    }
+    function forgotPass() {
+      window.location = "/forgotPass/forgotP.html";
+    }
+  </script>
+  <script src="/js/index.js" ></script>
+  <script src="/js/password.js" ></script>
+</html>

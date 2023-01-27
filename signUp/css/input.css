@@ -1,0 +1,309 @@
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:checked {
+  color: inherit;
+  text-decoration: none;
+}
+.input_form {
+  width: 100%;
+}
+/* .input_form i {
+    position: absolute;
+} */
+
+.select_input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  border: 0;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.sign_input {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  border: 0;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.sign_inputEmail {
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    border: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+label {
+  display: block;
+  width: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: #2c393f;
+}
+
+.div_input {
+}
+.input_sty {
+  height: 2.5rem;
+  width: 95%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  opacity: 0.5;
+  font-size: 14.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #343434;
+  background-color: transparent;
+}
+
+.input_styDate {
+    height: 2.5rem;
+    width: 95%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    opacity: 0.5;
+    font-size: 14.4265px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #343434;
+    background-color: transparent;
+}
+
+.input_sty::placeholder {
+  color: #343434;
+  opacity: 0.5;
+  font-size: 16.4265px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+select::placeholder {
+  color: #343434;
+  opacity: 0.5;
+  font-size: 14.4265px;
+  font-weight: 500;
+  line-height: 18px;
+}
+input {
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="password"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.1rem;
+  -webkit-text-security: square;
+}
+
+input[type="number"] {
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+/* Input for Special cases FILE  */
+.div_input {
+  height: 1.5rem;
+  width: 85%;
+  padding: 0;
+  border: 0;
+  text-align: start;
+  margin-left: 1rem;
+  opacity: 0.5;
+  font-size: 20.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #343434;
+  background-color: transparent;
+}
+
+/* Special case Select and Input */
+.input__select {
+  display: flex;
+  padding: 0 0.3rem;
+}
+.unSelect {
+  width: 30%;
+  border: 0;
+  background: transparent;
+  padding: 0 0.3rem;
+  opacity: 0.5;
+  font-size: 16.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  color: #343434;
+}
+.unInput {
+  width: 50%;
+  border: 0;
+  background: transparent;
+  padding: 0 0.3rem;
+  opacity: 0.5;
+  font-size: 16.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  color: #343434;
+}
+select {
+    outline: none;
+}
+
+/* Alternative input */
+.sign_content {
+  width: 95%;
+  height: 2.5rem;
+
+  flex-direction: row;
+
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  border: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.input_styled {
+  height: 1.7rem;
+  width: 90%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  opacity: 0.5;
+  font-size: 16.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  color: #343434;
+  background-color: transparent;
+}
+
+.upper_text {
+  font-style: normal;
+  font-size: 8px;
+  line-height: 14px;
+  margin: 0;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-align: left;
+  color: #2c393f;
+  width: 50%;
+  opacity: 0.2;
+}
+
+.input_styCon {
+  height: 2.5rem;
+  width: 85%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  margin-left: 1rem;
+  opacity: 0.5;
+  font-size: 20.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #343434;
+  background-color: transparent;
+}
+
+.input_styConsult {
+  height: 1.5rem;
+  width: 85%;
+  padding: 0;
+  border: 0;
+  margin: auto 0;
+  margin-left: 1rem;
+  opacity: 0.5;
+  font-size: 22.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #343434;
+  background-color: transparent;
+}
+.input_styConsultA {
+  height: 1.5rem;
+  width: 85%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  opacity: 0.5;
+  font-size: 20.4265px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #343434;
+  background-color: transparent;
+}
+
+/*  */
+
+/* Icons Spans */
+
+span {
+  background-color: #d66233;
+  border-radius: 20px;
+  padding: 7px 0;
+}
+
+.icon_sty {
+  width: 20px;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon_bg {
+  background-image: url("/images/can.png");
+}
+
+.icon_ln {
+  background-image: url("/images/link.png");
+}
+
+@media (max-width: 500px) {
+  /* .input_sty {
+    width: 70%;
+  }
+  .input_styled {
+    width: 70%;
+  }
+  .input_styCon,
+  .input_styConsult {
+    width: 70%;
+  } */
+  .unInput {
+    width: 65%;
+  }
+  .unSelect {
+      width: 35%;
+  }
+}
