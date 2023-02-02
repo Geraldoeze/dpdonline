@@ -3,7 +3,7 @@ const signInHandler = () => {
 }
 
 const consultHandler = () => {
-    window.location = "/signUp/Consultant/signUp_Page0.html";
+    window.location = "/signUp/Consultant/index.html";
 } 
 
 const homePage = () => {
@@ -11,5 +11,5 @@ const homePage = () => {
 }
 
 const affiHandler = () => {
-    window.location = "/signUp/Affiliate/signUp_Page0.html";
+    window.location = "/signUp/Affiliate/index.html";
 }

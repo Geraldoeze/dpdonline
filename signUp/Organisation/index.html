@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/SignUp_styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/input.css" type="text/css" />
+    <link rel="stylesheet" href="../css/password_styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../css/consultant_styles.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../css/pages_styles.css" type="text/css" />
+
+    <title>Orgaisation</title>
+  </head>
+  <body>
+    <!-- page 0 -->
+    <div class="div_container" id="0">
+      <div class="sign_Up">
+        <div class="signUp__0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_content">
+            <h3 class="sign_text">Create Account</h3>
+
+            <div class="input_form">
+              <label
+                >Hey, 👋🏼 Enter your details below to create to your
+                account</label
+              >
+              <div class="sign_input">
+                <input
+                  class="input_sty"
+                  placeholder="Enter email"
+                  type="email"
+                />
+              </div>
+
+              <div class="icons">
+                <div class="sign_icon">
+                  <img
+                    class=""
+                    src="/images/icons8-google-240.png"
+                    width="40px"
+                  />
+                </div>
+                <div class="sign_icon">
+                  <img
+                    style="padding: 5px"
+                    src="/images/Vectorblue.png"
+                    width="20px"
+                    height="30px"
+                  />
+                </div>
+                <button onclick="changePage()" id="someid" class="btn1">
+                  Continue
+                </button>
+              </div>
+            </div>
+            <div class="sign_typo1">
+              Already have an account?
+              <div onclick="signInHandler()" style="font-weight: bold">
+                Login now
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_sty">
+            <button class="btn5 space">Orgaisation Sign up</button>
+            <button onclick="individualHandler()" class="btn5 space">
+              Individual Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 1 -->
+    <div class="div_container" id="1">
+      <div class="sign_Up">
+        <div class="signUp0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_content">
+            <button class="btn3" onclick="goBack()">
+              
+                <img src="/images/Vector.png " alt="icon" /> Back
+              
+            </button>
+            <h3 class="sign_text">Lets Verify Its You</h3>
+            <div class="input_form">
+              <label>Enter the OTP to your mail Joseph@demo.com</label>
+              <div class="sign_content">
+                <div class="upper_text">OTP</div>
+                <input
+                  class="input_styled"
+                  type="text"
+                  id="tbNum"
+                  placeholder="CODE"
+                  onkeyup="addHyphen(this)"
+                />
+              </div>
+
+              <div onclick="changePage()" id="someid" class="icons">
+                <button class="btn4">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <img src="/images/individual/frameI1.png" alt="icon" />
+        </footer>
+      </div>
+    </div>
+
+    <!-- page 2 -->
+    <div class="div_container" id="2">
+      <div class="signUp">
+        <div class="signUp0">
+          <div onclick="goBack()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_content">
+            <button class="btn3" onclick="homePage()">
+              
+                <img src="/images/Vector.png " alt="icon" /> Back
+              
+            </button>
+            <h3 class="sign_text">Lets Us Know You</h3>
+            <div class="input_form">
+              <label>Fill the form below with your bio data</label>
+              <div class="sign_input">
+                <input
+                  class="input_sty"
+                  type="text"
+                  id="Orgname"
+                  placeholder="Organisation name"
+                />
+              </div>
+              <div class="sign_input">
+                <input
+                  class="input_sty"
+                  type="text"
+                  id="Orgaddress"
+                  placeholder="Organisation Address"
+                />
+              </div>
+              <div class="sign_input">
+                <input
+                  class="input_sty"
+                  type="name"
+                  id="name"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="sign_content">
+                <div class="upper_text">Sex</div>
+                <select class="input_styled" name="gender">
+                  <option value="none" selected>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+
+              <div class="sign_content">
+                <div class="upper_text">Phone Number</div>
+                <div class="input__select">
+                  <select class="unSelect" name="number">
+                    <option value="none" selected>NIG +234</option>
+                    <option value="uae">UAE +966</option>
+                    <option value="gha">GHA +233</option>
+                    <option value="usa">USA +1</option>
+                    <option value="uk">UK +44</option>
+                    <option value="chi">CHN +86</option>
+                    <option value="can">CAN +1</option>
+                  </select>
+                  <input class="unInput" type="number" placeholder="Number" />
+                </div>
+              </div>
+
+              <div class="sign_content">
+                <div class="upper_text">Client Role</div>
+                <select class="input_styled" name="role">
+                  <option value="none" selected>Select role</option>
+                  <option value="acc">Accountant</option>
+                  <option value="sales">Sales Manager</option>
+                  <option value="law">Lawyer</option>
+                  <option value="rep">Receptionist</option>
+                  <option value="sec">Security & Logistics</option>
+                </select>
+              </div>
+
+              <div onclick="changePage()" id="someid" class="icons">
+                <button class="btn4">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <img src="/images/individual/frameI2.png" alt="icon" />
+        </footer>
+      </div>
+    </div>
+
+    <!-- page 3 -->
+    <div class="div_container" id="3">
+      <div class="signUp">
+        <div class="signUp0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_password">
+            <button class="btn3" onclick="goBack()" >
+              
+                <img src="/images/Vector.png " alt="icon" /> Back
+              
+            </button>
+            <h3 class="sign_text">Create new Password</h3>
+
+            <div class="input_consult">
+              <label
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </label>
+              <div class="sign_consult3">
+                <div class="upper_div">
+                  <div class="upper_textZ">Password</div>
+                  <div
+                    id="textIcon"
+                    class="upper_textS"
+                    style="visibility: hidden"
+                  ></div>
+                </div>
+
+                <div class="lock_consult">
+                  <i class="icon_lock"></i>
+                  <input
+                    class="input_styConsultA"
+                    type="password"
+                    id="passwordId"
+                    onkeyup="getVal(this)"
+                  />
+                  <div onclick="myFunction()" id="showP" class="show_text">
+                    show
+                  </div>
+                </div>
+              </div>
+              <div class="upper_textA">
+                Minimum of 8 characters, with upper and lowercase, a number and
+                Special character.
+              </div>
+
+              <div class="sign_consult3">
+                <div class="upper_div">
+                  <div class="upper_textD">Re-enter</div>
+                  <div
+                    id="textCons"
+                    class="upper_textS"
+                    style="visibility: hidden"
+                  ></div>
+                </div>
+
+                <div class="lock_consult">
+                  <i class="icon_lock"></i>
+                  <input
+                    class="input_styConsultA"
+                    type="password"
+                    id="matchPass"
+                    onkeyup="confirmPass(this)"
+                  />
+                  <div onclick="toogleshow()" id="showPass" class="show_text">
+                    show
+                  </div>
+                </div>
+              </div>
+              <div class="upper_textA" id="matchPass">
+                Minimum of 8 characters, with upper and lowercase, a number and
+                Special character.
+              </div>
+            </div>
+            <div onclick="changePage()" id="someid" class="icons_consult">
+              <button class="btn4">Continue</button>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <img src="/images/individual/frameI3.png" alt="icon" />
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="./organize.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/password.js"></script>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/SignUp_styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/consultant_styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/pages_styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../signUp/css/password_styles.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../signUp/css/input.css" type="text/css" />
+
+    <title>Recover Password</title>
+  </head>
+  <body>
+    <!-- Forgot login Page 0-->
+
+    <div class="div_container" id="0">
+      <div class="sign_Up">
+        <div class="signUp0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_content">
+            <button class="btn3">
+              <a href="../login/index.html"
+                ><img src="/images/Vector.png " alt="icon" /> Back
+              </a>
+            </button>
+            <h3 class="sign_text">Forgot Password?</h3>
+
+            <div class="input_form">
+              <label
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </label>
+              <div class="sign_input">
+                <input
+                  class="input_sty"
+                  placeholder="Enter email"
+                  type="email"
+                />
+              </div>
+
+              <div onclick="changePage()" id="someid" class="icons">
+                <button class="btn4">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 1 -->
+    <div class="div_container" id="1">
+      <div class="sign_Up">
+        <div class="signUp0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_content">
+            <button class="btn3" onclick="goBack()">
+              
+                <img src="/images/Vector.png " alt="icon" /> Back
+              
+            </button>
+            <h3 class="sign_text">Check your mail</h3>
+            <div class="input_form">
+              <label
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </label>
+              <div class="sign_content">
+                <div class="upper_text">OTP</div>
+                <input
+                  class="input_styled"
+                  type="text"
+                  id="tbNum"
+                  placeholder="CODE"
+                  onkeyup="addHyphen(this)"
+                />
+              </div>
+              <div onclick="changePage()" id="someid" class="icons">
+                <button class="btn4">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 2 -->
+    <div class="div_container" id="2">
+      <div class="sign_Up">
+        <div class="signUp0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_password">
+            <button class="btn3" onclick="goBack()">
+              
+                <img src="/images/Vector.png " alt="icon" /> Back
+              
+            </button>
+            <h3 class="sign_text">Create new Password</h3>
+
+            <div class="input_consult">
+              <label
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </label>
+              <div class="sign_consult3">
+                <div class="upper_div">
+                  <div class="upper_textZ">Password</div>
+                  <div
+                    id="textIcon"
+                    class="upper_textS"
+                    style="visibility: hidden"
+                  ></div>
+                </div>
+
+                <div class="lock_consult">
+                  <i class="icon_lock"></i>
+                  <input
+                    class="input_styConsultA"
+                    type="password"
+                    id="passwordId"
+                    onkeyup="getVal(this)"
+                  />
+                  <div onclick="myFunction()" id="showP" class="show_text">
+                    show
+                  </div>
+                </div>
+              </div>
+              <div class="upper_textA">
+                Minimum of 8 characters, with upper and lowercase, a number and
+                Special character.
+              </div>
+
+              <div class="sign_consult3">
+                <div class="upper_div">
+                  <div class="upper_textD">Re-enter</div>
+                  <div
+                    id="textCons"
+                    class="upper_textS"
+                    style="visibility: hidden"
+                  ></div>
+                </div>
+
+                <div class="lock_consult">
+                  <i class="icon_lock"></i>
+                  <input
+                    class="input_styConsultA"
+                    type="password"
+                    id="matchPass"
+                    onkeyup="confirmPass(this)"
+                  />
+                  <div onclick="toogleshow()" id="showPass" class="show_text">
+                    show
+                  </div>
+                </div>
+              </div>
+              <div class="upper_textA" id="matchPass">
+                Minimum of 8 characters, with upper and lowercase, a number and
+                Special character.
+              </div>
+            </div>
+            <div onclick="changePage()" id="someid" class="icons_consult">
+              <button class="btn4">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 3 -->
+    <div class="div_container" id="3">
+      <div class="sign_Up">
+        <div class="signUp0">
+          <div onclick="homePage()" class="logo">
+            <img src="/images/dpdOnline.png" alt="icon" />
+          </div>
+
+          <div class="signup_content">
+            <button class="btn3" onclick="goBack()">
+              
+                <img src="/images/Vector.png " alt="icon" /> Back
+              
+            </button>
+            <h3 class="sign_text">Password Successfully Changed</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div onclick="changePage()" id="someid" class="icons">
+              <button class="btn4">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./forgot.js"></script>
+  <script src="/js/index.js"></script>
+</html>

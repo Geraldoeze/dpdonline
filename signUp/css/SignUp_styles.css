@@ -8,6 +8,9 @@ background-size: cover;
 }
 
 
+.div_container {
+  display: none;
+}
 .sign_Up {
 
     background-repeat: no-repeat;

@@ -161,6 +161,8 @@ input[type="number"] {
   line-height: 18px;
   cursor: pointer;
   color: #343434;
+  font-weight: 600;
+  
 }
 .unInput {
   width: 50%;
@@ -198,13 +200,13 @@ select {
   padding: 0;
   border: 0;
   margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: #343434;
   opacity: 0.5;
   font-size: 16.4265px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 18px;
-  cursor: pointer;
-  color: #343434;
-  background-color: transparent;
 }
 
 .upper_text {
