@@ -9,16 +9,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/styles.css" type="text/css" />
-    <link rel="stylesheet" href="../css/SignUp_styles.css" type="text/css" />
-    <link rel="stylesheet" href="../css/input.css" type="text/css" />
-    <link rel="stylesheet" href="../css/password_styles.css" type="text/css" />
     <link rel="stylesheet" href="./affiliate_styles.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="../css/consultant_styles.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="../css/pages_styles.css" type="text/css" />
+    
+    
+  
+    
 
     <title>Affiliate</title>
   </head>
@@ -32,52 +27,61 @@
           </div>
 
           <div class="signup_content">
-            <h3 class="sign_text">Create Account</h3>
+            <h3 class="sign_text">Let Us Know you</h3>
 
             <div class="input_form">
-              <label
-                >Hey, 👋🏼 Enter your details below to create to your
-                account</label
+              <label>
+                Fill the form below with your bio data
+                </label
               >
-              <div class="sign_input">
-                <input
-                  class="input_sty"
-                  placeholder="Enter email"
-                  type="email"
-                />
-              </div>
 
-              <div class="icons">
-                <div class="sign_icon">
-                  <img
-                    class=""
-                    src="/images/icons8-google-240.png"
-                    width="40px"
-                  />
-                </div>
-                <div class="sign_icon">
-                  <img
-                    style="padding: 5px"
-                    src="/images/Vectorblue.png"
-                    width="20px"
-                    height="30px"
-                  />
-                </div>
+              <div class="label_text">First Name<span class="required_text">*</span></div>
+            <div class="sign_inputEmail">
+              <input class="input_sty" required  type="text" />
+            </div>
+
+            <div class="label_text">Last Name<span class="required_text">*</span></div>
+            <div class="sign_inputEmail">
+              <input class="input_sty" required type="text" />
+            </div>
+
+            <div class="label_text">Email<span class="required_text">*</span></div>
+            <div class="sign_inputEmail">
+              <input class="input_sty" type="email" />
+            </div>
+
+            
+              <div class="label_text">Sex<span class="required_text">*</span></div>
+              <div class="sign_inputEmail">
+              <select class="input_styled" name="gender">
+                <option value="none" selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="female">Binary</option>
+                <option value="female">Others</option>
+              </select>
+            </div>
+
+
+              <div>
                 <button class="btn1" onclick="changePage()" id="someid">
                   Continue
                 </button>
               </div>
             </div>
-            <div class="sign_typo1">
-              Already have an account?
-              <div onclick="signInHandler()" style="font-weight: bold">
-                Login now
-              </div>
-            </div>
+            
           </div>
         </div>
+        <footer class="footer">
+          <img src="/images/individual/frameI1.png" alt="icon" />
+        </footer>
       </div>
     </div>
+
+    
+    
+
+  
 
     <!-- page 1 -->
     <div class="div_container" id="1">
@@ -88,23 +92,32 @@
           </div>
 
           <div class="signup_content">
-            <button onclick="goBack()" class="btn3">
+            <button class="btn3" onclick="goBack()">
               <img src="/images/Vector.png " alt="icon" /> Back
             </button>
-            <h3 class="sign_text">Lets Verify Its You</h3>
+            <h3 class="sign_text">More details</h3>
             <div class="input_form">
-              <label>Enter the OTP to your mail Joseph@demo.com</label>
-              <div class="sign_content">
-                <div class="upper_text">OTP</div>
+              <div class="label_text">Upload your Image (No Larger than 5mb) </div>
+
+             
+              <div class="sign_consult3A">
                 <input
-                  class="input_styled"
-                  type="text"
-                  id="tbNum"
-                  placeholder="CODE"
-                  onkeyup="addHyphen(this)"
-                />
+                class="input_styA"
+                type="file"
+                id="firstimg"
+                onchange="getImage(this.value)"
+                
+              />
+                
+                <label style="width: 18%" for="firstimg">
+                  <span><i class="icon_sty icon_ln"></i></span>
+                </label>
               </div>
 
+              <div class="label_text">Payoneer ID</div>
+              <div class="sign_inputEmail">
+                <input class="input_sty" required  type="text" />
+              </div>
               <div onclick="changePage()" id="someid" class="icons">
                 <button class="btn4">Continue</button>
               </div>
@@ -112,7 +125,7 @@
           </div>
         </div>
         <footer class="footer">
-          <img src="/images/affilate/framea2.png" />
+          <img src="../../images/individual/frameI2.png" alt="icon" />
         </footer>
       </div>
     </div>
@@ -129,149 +142,20 @@
             <button class="btn3" onclick="goBack()">
               <img src="/images/Vector.png " alt="icon" /> Back
             </button>
-            <h3 class="sign_text">Lets Us Know You</h3>
-            <div class="input_form">
-              <label>Fill the form below with your bio data</label>
-              <div class="sign_input">
-                <input
-                  class="input_sty"
-                  type="text"
-                  id="Fname"
-                  placeholder="First Name"
-                />
-              </div>
-              <div class="sign_input">
-                <input
-                  class="input_sty"
-                  type="text"
-                  id="Lname"
-                  placeholder="Last Name"
-                />
-              </div>
-
-              <div class="sign_content">
-                <div class="upper_text">Phone Number</div>
-                <div class="input__select">
-                  <select class="unSelect" name="number">
-                    <option value="none" selected>NIG +234</option>
-                    <option value="uae">UAE +966</option>
-                    <option value="gha">GHA +233</option>
-                    <option value="usa">USA +1</option>
-                    <option value="uk">UK +44</option>
-                    <option value="chi">CHN +86</option>
-                    <option value="can">CAN +1</option>
-                  </select>
-                  <input class="unInput" type="number" placeholder="Number" />
-                </div>
-              </div>
-
-              <div class="sign_content">
-                <div class="upper_text">Sex</div>
-                <select class="input_styled" name="gender">
-                  <option value="none" selected>Gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-
-              <div onclick="changePage()" id="someid" class="icons">
-                <button class="btn4">Continue</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="footer">
-          <img src="/images/affilate/framea2.png" alt="icon" />
-        </footer>
-      </div>
-    </div>
-
-    <!-- page 3 -->
-    <div class="div_container" id="3">
-      <div class="sign_Up">
-        <div class="signUp0">
-          <div onclick="homePage()" class="logo">
-            <img src="/images/dpdOnline.png" alt="icon" />
-          </div>
-
-          <div class="signup_content">
-            <button class="btn3" onclick="goBack()">
-              <img src="/images/Vector.png " alt="icon" /> Back
-            </button>
-            <h3 class="sign_text">More details</h3>
-            <div class="input_form">
-              <label>Upload his image 200&times200 </label>
-
-              <input
-                type="file"
-                id="firstimg"
-                onchange="getImage(this.value)"
-                style="display: none"
-              />
-              <div class="sign_consult3A">
-                <div id="output" class="div_input">Upload your picture</div>
-                <label style="width: 18%" for="firstimg">
-                  <span><i class="icon_sty icon_ln"></i></span>
-                </label>
-              </div>
-
-              <label>Payoneer ID</label>
-              <input
-                type="file"
-                id="firstimg22"
-                onchange="getImage22(this.value)"
-                style="display: none"
-              />
-              <div class="sign_consult3A">
-                <div id="output22" class="div_input">Upload Payoneer ID</div>
-                <label style="width: 18%" for="firstimg22">
-                  <span><i class="icon_sty icon_ln"></i></span>
-                </label>
-              </div>
-
-              <div onclick="changePage()" id="someid" class="icons">
-                <button class="btn4">Continue</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="footer">
-          <img src="/images/affilate/framea4.png" alt="icon" />
-        </footer>
-      </div>
-    </div>
-
-    <!-- page 4 -->
-    <div class="div_container" id="4">
-      <div class="sign_Up">
-        <div class="signUp0">
-          <div onclick="homePage()" class="logo">
-            <img src="/images/dpdOnline.png" alt="icon" />
-          </div>
-
-          <div class="signup_password">
-            <button class="btn3" onclick="goBack()">
-              <img src="/images/Vector.png " alt="icon" /> Back
-            </button>
-            <h3 class="sign_text">Create new Password</h3>
+            <h3 class="sign_text">Create Password</h3>
 
             <div class="input_consult">
               <label
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                >Enter a new Password for your account
               </label>
+              
+              <div class="label_text">Password<span class="required_text">*</span></div>
               <div class="sign_consult3">
-                <div class="upper_div">
-                  <div class="upper_textZ">Password</div>
-                  <div
-                    id="textIcon"
-                    class="upper_textS"
-                    style="visibility: hidden"
-                  ></div>
-                </div>
-
+            
                 <div class="lock_consult">
                   <i class="icon_lock"></i>
                   <input
+                    required
                     class="input_styConsultA"
                     type="password"
                     id="passwordId"
@@ -282,30 +166,26 @@
                   </div>
                 </div>
               </div>
+  
+
               <div class="upper_textA">
                 Minimum of 8 characters, with upper and lowercase, a number and
                 Special character.
               </div>
 
+              <div class="label_text">Password<span class="required_text">*</span></div>
               <div class="sign_consult3">
-                <div class="upper_div">
-                  <div class="upper_textD">Re-enter</div>
-                  <div
-                    id="textCons"
-                    class="upper_textS"
-                    style="visibility: hidden"
-                  ></div>
-                </div>
-
+            
                 <div class="lock_consult">
                   <i class="icon_lock"></i>
                   <input
+                    required
                     class="input_styConsultA"
                     type="password"
-                    id="matchPass"
-                    onkeyup="confirmPass(this)"
+                    id="passwordId"
+                    onkeyup="getVal(this)"
                   />
-                  <div onclick="toogleshow()" id="showPass" class="show_text">
+                  <div onclick="myFunction()" id="showP" class="show_text">
                     show
                   </div>
                 </div>
@@ -322,7 +202,7 @@
         </div>
 
         <footer class="footer">
-          <img src="/images/affilate/framea1.png" alt="icon" />
+          <img src="/images/individual/frameI3.png" alt="icon" />
         </footer>
       </div>
     </div>

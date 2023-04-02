@@ -56,19 +56,23 @@ a:checked {
 label {
   display: block;
   width: 100%;
-  font-family: "Montserrat";
+  font-family: 'Proxima Nova', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
-
   text-align: center;
-
+padding: 0px 20px;
   color: #2c393f;
+  margin-bottom: 5px;
 }
 
-.div_input {
+.label_text {
+  text-align: start;
+  font-weight: bold;
+  padding-left: 10px;
 }
+
 .input_sty {
   height: 2.5rem;
   width: 95%;

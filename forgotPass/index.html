@@ -14,22 +14,9 @@
       href="../signUp/css/SignUp_styles.css"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="../signUp/css/consultant_styles.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="../signUp/css/pages_styles.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="../signUp/css/password_styles.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="../signUp/css/input.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../login/index.css" type="text/css" />
+   
 
     <title>Recover Password</title>
   </head>
@@ -53,15 +40,13 @@
 
             <div class="input_form">
               <label
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                >Enter your email to reset your account password
               </label>
-              <div class="sign_input">
-                <input
-                  class="input_sty"
-                  placeholder="Enter email"
-                  type="email"
-                />
-              </div>
+              
+              <div class="label_text">Email<span class="required_text">*</span></div>
+            <div class="sign_inputEmail">
+              <input class="input_sty" placeholder="Enter email" type="email" />
+            </div>
 
               <div onclick="changePage()" id="someid" class="icons">
                 <button class="btn4">Continue</button>
@@ -89,18 +74,14 @@
             <h3 class="sign_text">Check your mail</h3>
             <div class="input_form">
               <label
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                >Enter the OTP
               </label>
-              <div class="sign_content">
-                <div class="upper_text">OTP</div>
-                <input
-                  class="input_styled"
-                  type="text"
-                  id="tbNum"
-                  placeholder="CODE"
-                  onkeyup="addHyphen(this)"
-                />
+              <div class="label_text">OTP<span class="required_text">*</span></div>
+              <div class="sign_inputEmail">
+                <input class="input_sty" type="text" id="tbNum" onkeyup="addHyphen(this)" placeholder="Enter OTP" type="email" />
               </div>
+  
+           
               <div onclick="changePage()" id="someid" class="icons">
                 <button class="btn4">Continue</button>
               </div>

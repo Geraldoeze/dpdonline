@@ -24,7 +24,7 @@ visible.style.display = "block";
 
 function changePage() {
   visible.style.display = "none";
-  if (idNumber > 3) {
+  if (idNumber >= 2) {
     
     const prevPage = document.getElementById(`${idNumber}`);
     prevPage.style.display = 'none';
@@ -33,7 +33,7 @@ function changePage() {
     newPage.style.display = "block";
     return true;
   }
-  if (idNumber <= 3) {
+  if (idNumber <= 2) {
       
     const prevPage = document.getElementById(`${idNumber}`);
     prevPage.style.display = 'none';

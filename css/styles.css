@@ -4,6 +4,21 @@ body {
   box-sizing: border-box;
 }
 
+/* font  */
+
+@font-face {
+	font-family: 'proxima_nova_rgregular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*  */
 main {
   position: absolute;
   margin: 0;
@@ -18,17 +33,35 @@ main {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   width: 100%;
-  font-family: "Montserrat";
+  
 }
 
+/* pages */
+
+.div_container {
+  display: none;
+}
+
+
+
 .links {
-  margin: 1rem 5rem;
+  margin: 1rem 1rem;
   display: flex;
   justify-content: space-between;
 }
+.links img{
+  width: 200px;
+}
+
+@media (max-width: 600px){
+.links img {
+  width: 120px;    
+    
+}
+}
 
 .btn1 {
-  font-family: "Montserrat";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -43,8 +76,9 @@ main {
   cursor: pointer;
 }
 
+
 .btn2 {
-  font-family: "Montserrat";
+  font-family: 'Proxima Nova', 'sans-serif';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -52,16 +86,18 @@ main {
   height: 3rem;
   color: #d66233;
   margin: auto 0;
-  width: 15rem;
+  padding: 0px 20px;
+  width: 20rem;
   border: 0;
   border: 2px solid #d66233;
   background-color: transparent;
   border-radius: 10px;
   cursor: pointer;
+  min-width: 250px;
 }
 
 .btn3 {
-  font-family: "Montserrat";
+  font-family: 'Proxima Nova', 'sans-serif';
   font-style: normal;
   font-weight: 500;
   font-size: 14.426px;
@@ -78,14 +114,23 @@ main {
   cursor: pointer;
 }
 
+.dpd_image {
+  margin-top: 70px;
+  width: 250px;
+  text-align: left;
+}
+
 .main {
   display: flex;
-  padding: 0 5rem;
+  padding: 0 2rem;
 }
 .main_content {
   margin: 3rem 0;
   width: 60%;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .head_image {
@@ -94,7 +139,7 @@ main {
 
 .head_text {
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 60px;
   line-height: 73px;
   display: flex;
@@ -104,15 +149,25 @@ main {
   color: #404e57;
 }
 
+
+@media screen and (max-width: 600px) {
+.head_text {
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+}
+
 .btn_links {
   margin: 2rem 0;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .head_typo {
-  font-family: "Montserrat";
+  font-family: 'Proxima Nova', 'sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -126,61 +181,14 @@ main {
   cursor: pointer;
 }
 
-/*  */
-.line_point {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 65%;
-  top: 20%;
-}
-
-.line_through {
-  position: absolute;
-  width: 37%;
-  height: 20%;
-  left: -70.5px;
-  top: 14%;
-
-  opacity: 0.23;
-  
-}
-
-.curl {
-  transform: rotate(-23.77deg);
-  z-index: 1;
-}
-.curl_line {
-  position: absolute;
-  width: 37%;
-  height: 31%;
-  left: -110px;
-  top: 55%;
-
-  opacity: 0.23;
-  
-  
-}
-
-/* line media @ */
-@media (max-width: 750px) {
-  .line_through {
-    height: 15%;
-  }
-  .line_point {
-    display: none;
-  }
-  .curl_line {
-    display: none;
-  }
-}
 
 /*  */
 
 /* Content */
 .content {
   width: 100%;
-  font-family: "Montserrat";
+  font-family: 'Proxima Nova', 'sans-serif';
+  margin-top: 160px;
 }
 
 .content_text {
@@ -213,66 +221,46 @@ main {
 }
 
 .cover_container {
-  width: 90%;
-  height: 10%;
-  position: absolute;
-  display: flex;
+  width: 100%;
+  margin: 9rem 0;
 }
 
 .subscribe_cover {
-  position: absolute;
-  width: 80%;
+  width: 70%;
   margin: auto;
-  font-family: "Montserrat";
   background-image: linear-gradient(236.16deg, #d66233 46.75%, #e1bfaf 99.88%);
-  transform: skewX(6deg);
-  transform: skewY();
-  height: 10%;
+  border-radius: 80px;
+  padding-bottom: 4rem;
+  transform: perspective(20px) rotate(-2deg) rotateX(-0.4deg) skewX(3deg);
+
 }
-.subscribe_cover2 {
-  position: absolute;
-  width: 90%;
-  margin: 0 5rem;
-  font-family: "Montserrat";
-  background-image: linear-gradient(236.16deg, #d66233 46.75%, #e1bfaf 99.88%);
-  transform: skewX();
-  transform: skewY();
-  height: 10%;
-}
-.sub_cover {
-   /* display: flex;
+
+.subscribe_cover_content {
+  transform: perspective(20px) rotate(2deg) rotateX(0.4deg) skewX(-3deg);
+  display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 2rem 0;
-  border-radius: 80px; */
+  font-family: 'Proxima Nova', sans-serif;
+  margin: auto
 }
 
-.cover_transform {
-  height: 1rem;
-  background-color: #404e57;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-
-  transform: skewY(-2deg);
-}
 
 .cover_text {
   color: #ffffff;
   width: 75%;
   margin: 0 auto;
   line-height: 104%;
-  font-size: 48px;
+  font-size: 58px;
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  padding: 1rem 0;
+  padding: 3rem 0
 }
 
 .cover_input {
   width: 80%;
-  height: 2.5rem;
+  height: 3.8rem;
   gap: 10px;
   margin: 1rem auto;
   background-color: rgba(255, 255, 255, 0.3);
@@ -283,39 +271,39 @@ main {
   font-size: 18px;
   font-weight: 600;
   line-height: 141%;
-}
-.cover_input::placeholder {
-  color: #ffffff;
-
-  text-align: center;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
-input {
+.cover_input:focus {
   outline: none;
-  cursor: pointer;
 }
+
 .cover_btn {
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: #ffffff;
   border: 0;
   width: 25%;
-  height: 3rem;
+  height: 4rem;
   margin-bottom: 2.5rem;
   border-radius: 16px;
   color: #d66233;
   line-height: 141%;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-style: normal;
+  cursor: pointer;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
+
+/* client */
 .client_container {
-  margin: 2rem 0;
+  margin: 2rem 0 12rem 0;
   padding: 1rem;
 }
 
 .client_flows {
-  font-family: "Montserrat";
+  font-family: 'Proxima Nova', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -485,6 +473,54 @@ input {
   text-transform: capitalize;
   color: #ffffff;
 }
+@media (max-width: 600px) {
+.btn1 {
+    width: 8rem;
+    min-width: 120px;
+    padding: 0px;
+    font-size: 12px;
+    height: 3.0rem;
+}
+.btn_hire_team {
+  min-width: 250px;
+  width: 20rem;
+}
+.content {
+  margin-top: 30px;
+}
+.content_text {
+  font-size: 24px;
+}
+.cover_container {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.subscribe_cover {
+  transform: perspective(0px) rotate(0deg) rotateX(-0deg) skewX(0deg);
+    margin: 0px;
+    width: 100%;
+    border-radius: 0px;
+}
+.subscribe_cover_content {
+  transform: perspective(0px) rotate(0deg) rotateX(-0deg) skewX(0deg);
+}
+}
+
+@media (max-width: 1000px) { 
+.subscribe_cover {
+  width: 100%;
+}
+.client_container {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 100px;
+  padding: 0px;
+}
+
+
+
+}
+
 
 @media (max-width: 750px) {
   .links {
@@ -499,6 +535,7 @@ input {
   }
   .main_content {
     width: 100%;
+    margin-bottom: 0px;
   }
   .head_image {
     display: none;
@@ -530,7 +567,7 @@ input {
     font-size: 30px;
   }
   .cover_btn {
-    width: 30%;
+    width: 60%;
   }
   .client_flows {
     font-size: 30px;

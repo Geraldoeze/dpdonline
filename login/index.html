@@ -4,33 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+   
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link
       rel="stylesheet"
-      href="../signUp/css/SignUp_styles.css"
+      href="./index.css"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="../signUp/css/consultant_styles.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="../signUp/css/pages_styles.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="../signUp/css/password_styles.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="../signUp/css/input.css" type="text/css" />
-
+    
     <title>Login</title>
   </head>
   <body>
@@ -49,25 +30,21 @@
             <label
               >Hey, 👋🏼 Enter your details below to login to your account</label
             >
+
+<form>
+            <div class="label_text">Email<span class="required_text">*</span></div>
             <div class="sign_inputEmail">
-              <input class="input_sty" placeholder="Enter email" type="email" />
+              <input class="input_sty" required placeholder="Enter email" type="email" />
             </div>
 
-            <div class="sign_consult3">
-              <div class="upper_div">
-                <div class="upper_textZ">Password</div>
-                <div
-                  id="textIcon"
-                  class="upper_textS"
-                  style="visibility: hidden"
-                >
-                
-              </div>
-              </div>
 
+            <div class="label_text">Password<span class="required_text">*</span></div>
+            <div class="sign_consult3">
+          
               <div class="lock_consult">
                 <i class="icon_lock"></i>
                 <input
+                  required
                   class="input_styConsultA"
                   type="password"
                   id="passwordId"
@@ -78,34 +55,28 @@
                 </div>
               </div>
             </div>
+
+          </form>
             <div class="wahalla">
-              <div class="checkbox"><img style="margin-right: 0.5rem;" src="/images/VectorPrime.png" alt="prime" /> keep me log in</div>
+              <div class="checkbox">
+                <span style="display: flex; justify-content: start"><input type="checkbox" id="demoCheckbox" name="checkbox" value="1" data-gtm-form-interact-field-id="0">
+                    <label style="padding-left: 5px;" for="demoCheckbox"> keep me log
+                        in</label>
+                </span>
+            </div>
+              
               <div onclick="forgotPass()" class="forgot_P">Forgot Password</div>
             </div>
             <div class="icons">
-              <div class="sign_icon">
-                <img
-                  class=""
-                  src="/images/icons8-google-240.png"
-                  width="40px"
-                />
-              </div>
-              <div class="sign_icon">
-                <img
-                  style="padding: 5px"
-                  src="/images/Vectorblue.png"
-                  width="20px"
-                  height="30px"
-                />
-              </div>
+            
               <button onclick="changePage()" id="someid" class="btn1">
-                Continue
+                Sign In
               </button>
             </div>
           </div>
           <div class="sign_typo1">
             Don't have an account?
-            <div onclick="signUpHandler()" style="font-weight: bold">Signup now</div>
+            <div onclick="signUpHandler()" style="font-weight: bold; width: 20%">Signup </div>
           </div>
         </div>
       </div>
